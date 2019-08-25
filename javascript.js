@@ -1,3 +1,8 @@
+
+function startGame(){
+	var but = document.getElementById("but");
+	but.style.display="none";
+	
 var car = document.getElementById("player");
 var e = document.querySelectorAll(".up");
 var f = document.querySelectorAll(".down");
@@ -42,7 +47,7 @@ setInterval(function(){
 }
 }, 100);
 
-//code foe lower movement of blocks
+//code for lower movement of blocks
 
 setInterval(function(){
 	for(var i=0;i<f.length;i++){
@@ -57,7 +62,7 @@ setInterval(function(){
 }
 }, 100);
 
-  
+ 
 
 
 
@@ -89,7 +94,7 @@ setInterval(function(){
 
                 
             
-			    setInterval(function(){
+			   setInterval(function(){
 			    	
 				for(i=0;i<e.length;i++)
       			{		var x=car.offsetLeft;     /*cars left position*/                              
@@ -107,7 +112,9 @@ setInterval(function(){
                      if(((l<=x && x<=r)||(l<=bl && bl<=r)||(l<=br && br<=r))&&((ot<=bb && bb<=b)||(ot<=bt && bt<=b)||(ot<=t && t<=b)))
                      {   
                         car.style.background="blue";
-                         
+						alert("GAME OVER");
+						document.location.reload();
+						clearInterval(interval);
                      } 
                        
              }
@@ -133,7 +140,9 @@ setInterval(function(){
                      if(((l<=x && x<=r)||(l<=bl && bl<=r)||(l<=br && br<=r))&&((ot<=bb && bb<=b)||(ot<=bt && bt<=b)||(ot<=t && t<=b)))
                      {   
                         car.style.background="blue";
-                         
+						alert("GAME OVER");
+						document.location.reload();
+						clearInterval(interval);
                      } 
                        
               }        
@@ -150,4 +159,4 @@ setInterval(function(){
                       no.textContent=v;
                  
 
-         });       
+         });       }
