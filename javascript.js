@@ -1,18 +1,64 @@
 
-function startGame(){
+/*function startGame(){
 	var but = document.getElementById("but");
 	but.style.display="none";
+	var start = document.getElementById("start");
+	start.style.backgroundImage="";*/
+
+var e;
+var f;
+var star;
+var x;
+
+
+function easy()
+{
+	x=400;
+	startGame();
+
+
+}
+
+
+
+function medium(){
+
+
+   x=300;
+   startGame()
+	// body...
+}
+
+
+function hard() {
+
+x=100;
+startGame()
 	
+}
+function startGame(){
+	var body="document.get"
+	var but = document.querySelectorAll(".but");
+	but[0].style.display="none";
+	but[1].style.display="none";
+	but[2].style.display="none";
 var car = document.getElementById("player");
-var e = document.querySelectorAll(".up");
-var f = document.querySelectorAll(".down");
+ e = document.querySelectorAll(".up");
+ f = document.querySelectorAll(".down");
 var score=document.querySelector(".score");
 var no=document.querySelector(".no");
-var star=document.querySelectorAll(".star");
+ star=document.querySelectorAll(".star");
+ var lost=document.querySelectorAll(".lost");
+ var get=document.querySelector(".get");
+ var body=document.querySelector("body");
+ var win=document.querySelector(".win")
 car.style.background="yellow";
 score.style.color="white";
+lost[0].style.display="none";
+lost[1].style.display="none";
 score.textContent="SCORE :";
 no.style.color="white";
+
 
  
 for(var i=0;i<star.length;i++)
@@ -45,7 +91,7 @@ setInterval(function(){
      
                     
 }
-}, 100);
+}, x);
 
 //code for lower movement of blocks
 
@@ -60,7 +106,7 @@ setInterval(function(){
     }
    
 }
-}, 100);
+}, x);
 
  
 
@@ -70,20 +116,20 @@ setInterval(function(){
 		function checkKeyPress(key)
 		{
 
-			if(key.keyCode=="39")
+			if((key.keyCode=="39")&&(car.offsetLeft<=1195))
 				{
 					car.style.left = (car.offsetLeft += 5) + 'px';
 				}
-				if(key.keyCode=="37")
+				if((key.keyCode=="37")&&(car.offsetLeft>0))
 
 				{
 					car.style.left = (car.offsetLeft -= 5) + 'px';
 				}	
-			if(key.keyCode=="40")
+			if((key.keyCode=="40")&&(car.offsetTop<=550))
 				{
 					 car.style.top = (car.offsetTop += 5) + 'px';
 				}
-			if(key.keyCode=="38")
+			if((key.keyCode=="38")&&(car.offsetTop>=0))
 				{
 					car.style.top = (car.offsetTop -= 5) + 'px';
 		
@@ -112,10 +158,10 @@ setInterval(function(){
                      if(((l<=x && x<=r)||(l<=bl && bl<=r)||(l<=br && br<=r))&&((ot<=bb && bb<=b)||(ot<=bt && bt<=b)||(ot<=t && t<=b)))
                      {   
                         car.style.background="blue";
-						alert("GAME OVER");
-						document.location.reload();
-						clearInterval(interval);
-                     } 
+                        get.style.display="block";
+                        hide();
+					 
+					 }
                        
              }
          });   
@@ -140,9 +186,9 @@ setInterval(function(){
                      if(((l<=x && x<=r)||(l<=bl && bl<=r)||(l<=br && br<=r))&&((ot<=bb && bb<=b)||(ot<=bt && bt<=b)||(ot<=t && t<=b)))
                      {   
                         car.style.background="blue";
-						alert("GAME OVER");
-						document.location.reload();
-						clearInterval(interval);
+                           get.style.display="block";
+                       
+						hide();
                      } 
                        
               }        
@@ -157,6 +203,33 @@ setInterval(function(){
                   	}
                   }
                       no.textContent=v;
+                      if(v==80)
+                      { win.style.display="block";
+                      	
+                      }
                  
 
-         });       }
+         });       
+
+
+
+			
+		}
+		function hide()
+			{
+				for(var i=0;i<e.length;i++)
+					{
+						e[i].style.display="none";
+					}
+				for(var i=0;i<f.length;i++)
+				{
+					f[i].style.display="none";
+
+				}	
+				for(var i=0;i<star.length;i++)
+				{
+					star[i].style.display="none";
+				}
+             car.style.display="none";
+
+			}

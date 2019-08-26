@@ -1,3 +1,35 @@
+
+/*
+#but {
+    background-color:peachpuff;
+    border: 4px solid purple;
+    color:red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    top:400px;
+    left:570px;
+    font-size:2.5vw;
+    font-family: 'Lucida Sans';
+  }
+  #but:hover {
+    background-color:crimson;
+    color: white;
+  }*/
+
+  div{
+    text-align: center;
+}
+body{
+    background: black;
+    
+}
+
+
 #player {
     position: absolute;
     top: 300px;
@@ -20,8 +52,10 @@
     width: 30px;
     height: 50px;
     
+
     
 }  
+ 
 .down {
     position: absolute;
     width: 30px;
@@ -31,27 +65,22 @@
 }  
 
   
-body
+
+
+  .starth1{
+    font-size: 100px;
+    text-shadow: 4px 4px  red;
+    color:#185ED9;
+  }
+
+
+.but
 {
-background: black;
+   width: 200px;
+   height: 30px;
+   margin-bottom: 20px;
+   background: red;
+   border-radius:20%;
+   border:blue solid 2px; 
+
 }
-#but {
-    background-color:peachpuff;
-    border: 4px solid purple;
-    color:red;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    position: absolute;
-    top:400px;
-    left:600px;
-    font-size:2.5vw;
-    font-family: 'Lucida Sans';
-  }
-  #but:hover {
-    background-color:crimson;
-    color: white;
-  }
