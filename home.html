@@ -6,95 +6,98 @@
 
         <title>Animation</title>
     </head>
- <body style="background-image: url(images/city2.jpg);" id="head">
-  
-    <audio class="bell"><source src="coin_collection.mp3" ></audio>
-        <audio class="lev" loop="true"><source src="Fantasy_Game_Background.mp3"></audio>
-          <audio class="lev" loop="true"> <source src="Game-Menu.mp3"></audio>
-            <audio class="lev" loop="true"> <source src="Surreal-Chase.mp3" ></audio>
-              <audio class="lev" ><source src="Car+Alarm.mp3" ></audio>
-           
-           
+    <body style="background: url(images/city2.jpg);" id="head">    
+
+      <audio class="bell"><source src="coin_collection.mp3" ></audio>
+       <audio class="lev" loop="true"><source src="Fantasy_Game_Background.mp3"></audio>
+       <audio class="lev" loop="true"> <source src="Game-Menu.mp3"></audio>
+       <audio class="lev" loop="true"> <source src="Surreal-Chase.mp3" ></audio>
+       <audio class="lev" ><source src="Car+Alarm.mp3" ></audio>
+          
+                     
+
+<div class="grass" style="display: none"></div>
+
+<div class="grass" style="display: none;left:170px;width:80px; "></div>
+
+<div class="grass" style="display: none;left:300px;width:80px; "></div>
+ <div class="grass" style="display: none;left:460px;width:80px; "></div>
+   <div class="grass" style="display: none;left:600px;width:80px; "></div>
+     <div class="grass" style="display: none;left:760px;width:80px; "></div>
+       <div class="grass" style="display: none;left:900px;width:80px; "></div>
+         <div class="grass special" style="display: none;left:1050px;width:80px; "></div>
+
+
 
 <div style="text-align: right;"><span class="score"></span><span class="no"></span></div>
-<div class="win" style="display: none" ><h1 class="starth1">YOU WIN</h1></div>   
+<div class="win" style="display: none" ><h1 class="starth3">YOU WIN</h1></div>   
 <div class="lost" style="display: block;"><div><h1 class="starth1">WELCOME TO GAME</h1></div></div>
-<div class="lost" style="display: block;"><div><h1 class="starth2">CROSSING ROAD</h1></div></div>
-<DIV  style="display: none; " class="get "><h1 class="starth1">GAME OVER</h1></DIV>
-<DIV  style="display: none; " class="get "><h1 class="starth1">YOUR SCORE IS : <SPAN class="value"></SPAN></h1></DIV>
-<div style="text-align: center">  <button onclick="easy()" class="but" id="but1">EASY </button></div>
-<div style="text-align: center">  <button onclick="medium()" class="but" id="but2">MEDIUM</button></div>
-<div style="text-align: center">  <button onclick="hard()" class="but" id="but3" >HARD</button></div>
-         
+<div class="lost" style="display: block;"><div><h1 class="starth2">CROSSING ROADS</h1></div></div>
+<DIV  style="display: none; " class="get "><h1 class="starth4">GAME OVER</h1></DIV>
+<DIV  style="display: none; " class="get "><h1 class="starth5">YOUR SCORE IS : <SPAN class="value"></SPAN></h1></DIV>
+<div style="text-align: center">  <button onclick="easy()" class="but">EASY</button></div>  
+<div style="text-align: center">  <button onclick="medium()" class="but">MEDIUM</button></div>
+<div style="text-align: center">  <button onclick="hard()" class="but">HARD</button></div>
+<!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQazCwU5IsIXaffdmnuMy-v_JwyqPIE4NLxQwNXLWaKlpLFcqU-M4npFpwE">         -->
 
-<div id="player" ></div>
-
-
-
- <!-- these are the blocks moving down wards red in color -->
- <div class="up" style="left: 120px;top:540px"></div>
-  <div class="up" style="left: 400px;top:540px"></div>
-  <div class="up" style="left: 700px;top:540px"></div>
-  <div class="up" style="left: 1000px;top:540px"></div>
-   <div class="up" style="left: 120px;top:360px"></div>
-  <div class="up" style="left: 400px;top:360px"></div>
-  <div class="up" style="left: 700px;top:360px"></div>
-  <div class="up" style="left: 1000px;top:360px"></div>
- <div class="up" style="left: 120px;top:180px"></div>
-  <div class="up" style="left: 400px;top:180px"></div>
-  <div class="up" style="left: 700px;top:180px"></div>
-  <div class="up" style="left: 1000px;top:180px"></div>
+<img id="player" src="images/duck.jpg" style="opacity: 0">
 
 
 
-    <!-- these are the blocks moving upwards -->
-
-
-
- <div class="down" style="left: 250px;top:270px"></div>
- <div class="down" style="left: 550px;top:270px"></div>
- <div class="down" style="left: 850px;top:270px"></div>
- <div class="down" style="left: 1150px;top:270px"></div>
- <div class="down" style="left: 250px;top:440px"></div>
- <div class="down" style="left: 550px;top:490px"></div>
- <div class="down" style="left: 850px;top:440px"></div>
- <div class="down" style="left: 1150px;top:540px"></div>
+<!-- these are the blocks moving down wards red in color -->
+<div class="road1"></div>
+<img class="up" style="display:none;left: 120px;top:540px" src="images/image.jpg">
+ <img class="up " style="display:none;left: 120px;top:360px" src="images/download.jpg">
+<img class="up " style="display:none;left: 120px;top:180px" src="images/download (1).jpg">
+ 
+ <div class="road2"></div>
+ <img class="up " style="display:none;left: 400px;top:540px"src="images/download (1).jpg">
+ <img class="up" style="display:none;left: 400px;top:360px"src="images/image.jpg">
+ <img class="up " style="display:none;left: 400px;top:180px" src="images/download (1).jpg">
+ 
+ <div class="road3"></div>
+ <img class="up " style="display:none;left: 700px;top:360px"src="images/download (1).jpg">
+ <img class="up " style="display:none;left: 700px;top:540px" src="images/download.jpg">
+ <img class="up" style="display:none;left: 700px;top:180px"src="images/image.jpg">
+ 
+ <div class="road4"></div>
+ <img class="up" style="display:none;left: 1000px;top:540px"src="images/image.jpg">
+ <img class="up " style="display:none;left: 1000px;top:360px" src="images/download.jpg">
+ <img class="up " style="display:none;left: 1000px;top:180px" src="images/download.jpg">
  
 
- 
- <div class="star" style="left:170px;top:250px;"></div>
- <div class="star" style="left:300px; top:100px;"></div>
- <div class="star" style="left:300px; top:400px;"></div>
- <div class="star" style="left:350px;top:200px;"></div>
- <div class="star" style="left:350px;top:500px;" ></div>
- <div class="star" style="left:450px;top:100px;"></div>
- <div class="star" style="left:450px;top:400px;"></div>
- <div class="star" style="left:600px;top:200px;"></div> 
- <div class="star" style="left:600px;top:550px;"></div> 
- <div class="star" style="left:650px;top:300px"></div>
- <div class="star" style="left:750px;top:200px;"></div>
- <div class="star" style="left:900px;top:500px;" ></div>
- <div class="star" style="left:900px;top:300px;" ></div>
- <div class="star" style="left:950px;top:100px;"></div>
- <div class="star" style="left:1050px;top:300px;" ></div>
-             
-       <!--      <div class="star" style="left:170px;top:250px;"><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:300px; top:100px;"><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:300px; top:400px;"><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:350px;top:200px;"><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:350px;top:500px;" ><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:450px;top:100px;"><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:450px;top:400px;"><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:600px;top:200px;"><img src="images/str2.jpg" class="image"/></div> 
-             <div class="star" style="left:600px;top:550px;"><img src="images/str2.jpg" class="image"/></div> 
-             <div class="star" style="left:650px;top:300px"><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:750px;top:200px;"><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:900px;top:500px;" ><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:900px;top:300px;" ><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:950px;top:100px;"><img src="images/str2.jpg" class="image"/></div>
-             <div class="star" style="left:1050px;top:300px;" ><img src="images/str2.jpg" class="image"/></div>
-             
-       -->
+
+   <!-- these are the blocks moving upwards -->
+
+
+
+<img class="down" style="display:none;left: 250px;top:270px" src="images/yellow.jpg">
+<img class="down" style="display:none;left: 550px;top:270px"src="images/blue.jpg">
+<img class="down" style="display:none;left: 850px;top:270px" src="images/blue.jpg">
+<img class="down" style="display:none;left: 1150px;top:270px"src="images/yellow.jpg">
+<img class="down" style="display:none;left: 250px;top:440px"src="images/yellow.jpg">
+<img class="down" style="display:none;left: 550px;top:490px"src="images/yellow.jpg">
+<img class="down" style="display:none;left: 850px;top:440px" src="images/blue.jpg">
+<img class="down" style="display:none;left: 1150px;top:540px"src="images/blue.jpg">
+
+
+
+<img class="star" style="display:none;left:170px;top:250px;"src="images/str2.jpg">
+<img class="star" style="display:none;left:300px; top:100px;"src="images/str2.jpg">
+<img class="star" style="display:none;left:300px; top:400px;"src="images/str2.jpg">
+<img class="star" style="display:none;left:350px;top:200px;"src="images/str2.jpg">
+<img class="star" style="display:none;left:350px;top:500px;" src="imagesstr2.jpg">
+<img class="star" style="display:none;left:450px;top:100px;"src="str2.jpg">
+<img class="star" style="display:none;left:450px;top:400px;"src="str2.jpg">
+<img class="star" style="display:none;left:600px;top:200px;"src="str2.jpg"> 
+<img class="star" style="display:none;left:600px;top:470px;"src="str2.jpg"> 
+<img class="star" style="display:none;left:650px;top:300px"src="str2.jpg">
+<img class="star" style="display:none;left:750px;top:200px;"src="str2.jpg">
+<img class="star" style="display:none;left:900px;top:500px;" src="str2.jpg">
+<img class="star" style="display:none;left:900px;top:300px;" src="str2.jpg">
+<img class="star" style="display:none;left:950px;top:100px;"src="str2.jpg">
+<img class="star" style="display:none;left:1050px;top:300px;" src="str2.jpg">
+
             <script type="text/javascript" src="javascript.js"></script>
 
 </body>
